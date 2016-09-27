@@ -1,7 +1,7 @@
-# Tableau Sample App
+# Tableau Mobile App Bootstrap
 -----------------
 
-The Tableau Sample App provides example code for how to embed vizzes inside of a hybrid web app.
+Provides example code for how to embed vizzes inside of a hybrid web app.
 
 # Contents
 -----------------
