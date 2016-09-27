@@ -1,0 +1,96 @@
+<!-- 
+TS: Edit this code to change the basic appearance of the home page.
+The URLs and image attributes of each card can be edits to match the needs of your app.
+-->
+<ion-view view-title="Home">
+  <ion-content class="home" scroll="true">
+
+    <h1 class="padding" > 
+      Incorporate Tableau Content in Your Mobile App 
+    </h1>
+    <h2> 
+      This sample app demonstrates how to embed vizzes into your company's app. 
+    </h2>
+
+    <div class="row">
+        <div class="card col" ng-click="openLink('https://mytableau.tableaucorp.com/display/devft/Custom+Mobile+App')">
+          <div class="item item-divider">
+            Help
+          </div>
+
+          <img class="full-image" src="../img/HelpViz.png">
+
+          <div class="item item-body">
+              Read the wiki to get help with the app.
+          </div>
+        </div>
+      </a>
+
+      <div class="card col"  ng-click="openLink('http://onlinehelp.tableau.com/current/api/js_api/en-us/JavaScriptAPI/js_api.htm')">
+        <div class="item item-divider">
+          Reference
+        </div>
+        
+        <img class="full-image" src="../img/JavaScriptLogo.png">
+
+        <div class="item item-body">
+            Learn about the Tableau Javascript API.
+        </div>
+      </div>
+
+      <div class="card col"  ng-click="openLink('http://www.tableau.com/stories')">
+        <div class="item item-divider">
+          Stories
+        </div>
+
+        <img class="full-image" src="../img/StoriesViz.png">
+
+        <div class="item item-body">
+            Discover how people are using Tableau.
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+       <div class="card col"  ng-click="openLink('https://itunes.apple.com/us/app/tableau-mobile/id434633927?mt=8')">
+        <div class="item item-divider">
+          Download
+        </div>
+        
+        <img class="full-image" src="../img/Download.png">
+
+        <div class="item item-body">
+            Download the full company app.
+        </div>
+      </div>
+
+            
+      <div class="card col"  ng-click="openLink('http://www.tableau.com/products')">
+        <div class="item item-divider">
+          Explore
+        </div>
+
+        <img class="full-image" src="../img/ExploreViz.png">
+
+        <div class="item item-body">
+            Read about other Tableau products.
+        </div>
+      </div>
+
+      <div class="card col"  ng-click="openLink('http://ionicframework.com/docs/overview/')">
+        <div class="item item-divider">
+          Learn
+        </div>
+
+        <img class="full-image" src="../img/AngularLogo.png">
+
+        <div class="item item-body">
+            Familiarize yourself with Ionic and Cordova.
+        </div>
+      </div>
+
+      
+    </div>
+
+  </ion-content>
+</ion-view>

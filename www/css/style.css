@@ -1,0 +1,97 @@
+/* TS: Add your own css customization here or in the scss folder for Sass customization */
+
+/* TS: Styling for the date picker */
+
+.ion-datetime-picker-popup > .popup {
+    height: 450px;
+    width: 600px !important;
+}
+
+.ion-datetime-picker {
+    height: 300px;
+}
+
+.ion-datetime-picker > .row {
+    height: 45px;
+    font-size:13px;
+}
+
+ion-content.home {
+    margin-bottom:-5px
+}
+
+/* TS: Styling for tab-home.html */
+
+h1, h2 {
+    font-family:'Benton Sans Thin',Helvetica,sans-serif; 
+    line-height: 1.25;
+    text-align: center;
+    font-weight: 100;
+}
+
+h1.padding {
+    font-size:22pt; 
+    color:#000; 
+    padding-top:30px;
+}
+
+h2 {
+    color:#333; 
+    font-size:13pt; 
+    padding-left:10px; 
+    padding-right:10px; 
+    padding-bottom:10px;
+}
+
+div.row {
+   padding-bottom:0px; 
+}
+
+div.card {
+    padding:0px;
+}
+
+div.item-divider {
+    font-size: 11pt;
+}
+
+div.item-body {
+    border:0px; 
+    font-size:10pt;
+}
+
+/* TS: Styling for viz-container.html */
+
+#vizContainer {
+    width:100%;
+    height:100%;
+}
+
+/* TS: Styling for sign-in-promt.html */
+
+#signInButton {
+    margin-top:40px;
+}
+
+#signInButton > button {
+    background-color:rgb(235,143,80); 
+    color:rgb(255,255,255); 
+    font-family: Verdana, Geneva, sans-serif; 
+    line-height:34px; 
+    font-size:16px; 
+    width:80%; 
+    margin:auto;
+}
+
+/* TS: Styling for calendar-filter.html */
+
+[ion-datetime-picker] {
+    text-align: left; 
+    margin-top:10px; 
+    width:100%;
+}
+
+[ion-datetime-picker] > i.ion-calendar {
+    padding-left: 10px; 
+    float:right;
+}

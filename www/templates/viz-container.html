@@ -1,0 +1,14 @@
+  <div id="vizContainer" viz="viz">
+        <div class="buttons" align="right" style="padding:5px">
+          <!-- 
+            TS: Buttons that appear in the toolbar for the viz can be added here.
+            The functionality for all default buttons is in the controller for the viz-container directive.
+            See directives.js for more information.
+            To create specific toolbar buttons (such as filters) for the viz, add the button to the directive in the html for the tab and create
+            a controller for it in controllers.js. These controllers can obtain the viz object by calling $scope.viz
+            See tab-viz3.html for an example.
+          -->
+          <ng-transclude></ng-transclude>
+          <button class="button button-light button-outline button-small" ng-click="revert()" style="opacity:1"><i class = "icon icon ion-ios-arrow-left"></i> Revert</button>
+        </div>
+  </div>

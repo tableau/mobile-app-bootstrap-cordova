@@ -1,0 +1,17 @@
+<ion-view view-title="Viz 2">
+  <ion-content scroll="false">
+    <!-- 
+      TS: viz-container is a directive that manages the logic for loading vizzes with the Tableau Javascript API.
+      See directives.js for more information.
+      Add viz-container and set the url for the viz as an attribute anywhere in the app that you want to embed a viz. 
+    -->
+    <viz-container ng-if="!hideViz" url='{{config.viz2Url}}' toolbar-color='rgb(51, 51, 51)' button-color='#ddd'>
+      <!-- TS: Add viz specific toolbar buttons here such as custom filters. See tab-viz3.html for an example. -->
+    </viz-container>
+    <!--
+      TS: sign-in-prompt is a directive that contains the html that displays when a user is not signed in.
+      This prompt is totally customizable. See directives.js for more information.
+    -->
+    <sign-in-prompt ng-if="hideViz"></sign-in-prompt>
+  </ion-content>
+</ion-view>

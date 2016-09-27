@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-TableauOAuth" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>TableauOAuth</name>
+    <js-module name="TableauOAuth" src="www/TableauOAuth.js">
+        <clobbers target="TableauOAuth" />
+    </js-module>
+    <platform name="ios">
+        <config-file parent="/*" target="config.xml">
+        <feature name="TableauOAuth">
+        <param name="ios-package" value="TableauOAuthCordova" />
+        </feature></config-file>
+        <header-file src="src/ios/TableauOAuthCordova.h" />
+        <source-file src="src/ios/TableauOAuthCordova.m" />
+        <header-file src="src/ios/TableauOAuth.h" />
+        <source-file src="src/ios/TableauOAuth.m" />
+    </platform>
+</plugin>

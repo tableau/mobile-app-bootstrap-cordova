@@ -1,0 +1,9 @@
+<!-- TS: Edit this HTML to change the contents of the popup for filtering on dates. -->
+<button ion-datetime-picker date ng-model="date.start" only-valid="{'between': {'initial': '2016-01-02', 'final': '2017-01-01'}, 'inclusive': true}" class="button button-dark button-outline button-small">
+    Start Date: {{date.start| date: "MM/dd/yyyy"}}
+    <i class="icon icon ion-calendar"></i>
+</button> 
+<button ion-datetime-picker date ng-model="date.end" only-valid="{'between': {'initial': '2016-01-02', 'final': '2017-01-01'}, 'inclusive': true}" class="button button-dark button-outline button-small">
+    End Date:    {{date.end| date: "MM/dd/yyyy"}}
+    <i class="icon icon ion-calendar"></i>
+</button>
