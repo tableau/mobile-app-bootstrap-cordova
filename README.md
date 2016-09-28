@@ -90,7 +90,7 @@ Now that you've successfully built the sample app, you are ready to start adding
 
 Before loading a viz with the Tableau JavaScript API it is important to make sure that the user is properly signed in. 
 
-A [Tableau plugin](https://gitlab.tableausoftware.com/avertin/tableau-oauth-plugin) was developed for Cordova to handle three authentication related tasks. 
+A Tableau plugin (available soon) was developed for Cordova to handle three authentication related tasks. 
 1. Check the user's sign in status.
 2. Sign the user out.
 3. Keep the user continuously signed in with oauth tokens (this is optional depending on your config options in the app and on your server). 
@@ -98,7 +98,7 @@ A [Tableau plugin](https://gitlab.tableausoftware.com/avertin/tableau-oauth-plug
 The plugin's interface is wrapped in an Angular JS service. The service is located in www/js/services.js. For examples about how to use the service, check out www/js/controllers.js.
 
 ## OAuth
-The [Tableau plugin](https://gitlab.tableausoftware.com/avertin/tableau-oauth-plugin) also allows the app to keep users signed in with OAuth tokens. Although the plugin interfaces with JavaScript, it is written in Objective-C and may also be useful for developers with Native applications as a stand alone component. To locate the Objective-C files navigate to src/ios/TableauOAuth.m 
+A Tableau plugin (available soon) also allows the app to keep users signed in with OAuth tokens. Although the plugin interfaces with JavaScript, it is written in Objective-C and may also be useful for developers with Native applications as a stand alone component. To locate the Objective-C files navigate to src/ios/TableauOAuth.m 
 
 For more information about OAuth and the Objective-C class, visit the [project wiki](https://gitlab.tableausoftware.com/avertin/tableau-oauth-plugin/wikis/home).
 
@@ -112,16 +112,16 @@ To complete the initial user sign in, the app uses [Cordova's InAppBrowser plugi
 1. The 'View Data' option in tooltip overrides the current view of the app. To avoid this issue, disable the tooltip by appending the parameter ':tooltip=n' to the end of the viz urls.
 2. No error handling for user with valid credentials but incorrect permissions for viewing the vizzes.
 3. Device rotation does not work. This is unfortunately a Cordova bug but can be fixed by updating the plist settings in Xcode to allow rotation.
-3. The app does not support offline.
+3. The app does not support offline content.
 
 <a name="support"/>
 # Support
 -----------------
 
-This collection is not officially 'blessed' by Tableau Engineering or Support. What does that mean? We didn't have a qa team test it. It's a tool for learning how to embed vizzes inside a mobile application. You should not expect that there are 0 bugs.
+This collection is not officially 'blessed' by Tableau Engineering or Support. What does that mean? We didn't have a QA team test it. It's a tool for learning how to embed vizzes inside a mobile application. You should not expect that there are 0 bugs.
 
-If you have problems getting it to work, feel free to email us with questions, but we won't promise quick responses.
+If you have problems getting it to work, feel free to email us with questions, but we can't promise quick responses.
 
-A standard disclaimer: TableauSampleApp is made available AS-IS with no support and no warranty whatsoever. Despite efforts to write good and useful code there may be bugs that cause unexpected and undesirable behavior. The software is strictly “use at your own risk.”
+A standard disclaimer: mobile-app-bootstrap is made available AS-IS with no support and no warranty whatsoever. Despite efforts to write good and useful code there may be bugs that cause unexpected and undesirable behavior. The software is strictly “use at your own risk.”
 
 The good news: This is intended to be a self-service tool. You are free to modify it in any way to meet your needs.
