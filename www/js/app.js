@@ -1,6 +1,6 @@
 // Tableau Custom Mobile App
 
-// TS: If it's your first time looking at the Tableau Sample App, this is a great place to start!
+// TS: If it's your first time looking at the Mobile App Bootstrap, this is a great place to start!
 
 // angular.module is a global place for creating, registering and retrieving Angular modules
 // 'TableauSampleApp' is the name of this angular module example (also set in a <body> attribute in index.html)
