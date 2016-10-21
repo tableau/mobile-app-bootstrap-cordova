@@ -64,6 +64,7 @@ Now that you've successfully built the sample, you are ready to start adding you
 
 1. In index.html point the Tableau JavaScript API to your server. For information about how to do this, visit the  [Tableau JavaScript API reference](https://onlinehelp.tableau.com/current/api/js_api/en-us/JavaScriptAPI/js_api_concepts_get_API.htm?Highlight=min).
  `<script src="https://online.tableau.com/javascripts/api/tableau-2.min.js"></script>`
+
 2. In www/js/config.js edit the config variable to point to your server's sign in page and the vizzes that you want displayed in the app. 
 `.constant('config', {
     demo:  false,
@@ -79,6 +80,7 @@ Now that you've successfully built the sample, you are ready to start adding you
 Note: Most servers enable clickjacking protection which prevent URLs that include '#' in them from being loaded in cross-domain iframes. To allow a viz to load in the app follow [these instructions](http://kb.tableau.com/articles/knowledgebase/embed-views-clickjack-protection) for modifying the url.
 
 3. To change the icons and splash screen, follow [these Ionic docs](http://ionicframework.com/docs/cli/icon-splashscreen.html)
+
 4. Customize the UI 
 
 *  Ionic comes with lots of built in [UI options](http://ionicframework.com/docs/components/#header). The basic themes of these UI options can also be overridden using [Sass](http://ionicframework.com/docs/v2/theming/overriding-ionic-variables/) to create a customized look and feel.
@@ -97,7 +99,8 @@ Note: Most servers enable clickjacking protection which prevent URLs that includ
 
 Before loading a viz with the Tableau JavaScript API it is important to make sure that the user is properly signed in. 
 
-The [Mobile-Connected-Client plugin](https://github.com/tableau/mobile-connected-client) has been developed to handle three authentication related tasks. 
+The [Mobile-Connected-Client plugin](https://github.com/tableau/mobile-connected-client) has been developed to handle three authentication related tasks.
+
 1. Check the user's sign in status.
 2. Sign the user out.
 3. Keep the user continuously signed in with long-lived tokens (this is optional depending on your config options in the app and on your server). 
@@ -117,14 +120,19 @@ To complete the initial user sign in, the app uses [Cordova's InAppBrowser plugi
 -----------------
 
 1. The sample app does not yet have code that provides user authentication support on the Android platform.
+
 2. The 'View Data' option in tooltip overrides the current view of the app. To avoid this issue, disable the tooltip by appending the parameter ':tooltip=n' to the end of the viz URLs.
+
 3. In some cases, switching to a different viz may result in a blank page. Your console may show an error similar to:  Error: Can't find variable: tableau
 
 The solution is to stop using the JS API from the Server and copy it locally:
    a) Save tableau-2.1.0.min.js to the bootstrap’s www/js folder
    b) Change index.html to load this script (instead of the hosted one on the Server)
+
 4. No error handling for user with valid credentials but incorrect permissions for viewing the vizzes.
+
 5. Device rotation does not work. This is unfortunately a Cordova bug but can be fixed by updating the plist settings in Xcode to allow rotation.
+
 6. The app does not support offline content.
 
 <a name="support"/>
