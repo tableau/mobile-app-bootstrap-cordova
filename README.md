@@ -1,10 +1,8 @@
 # Mobile App Bootstrap
------------------
 
 Provides example code for how to embed Tableau vizzes inside of a hybrid web app.
 
 # Contents
------------------
 
 [Prerequisites](#Prerequisites)
 
@@ -24,7 +22,6 @@ At the moment, the Mobile App Bootstrap is only supported on iOS. While the app 
 
 <a name="installation"/>
 # Installation
------------------
 
 This section will guide you through the process of setting up your iOS development environment and running the Mobile App Bootstrap in the simulator.
 
@@ -83,7 +80,7 @@ Now that you've successfully built the sample, you are ready to start adding you
     serverUrl: "https://tableau.example.com",
     sitePath: "sitePath",
     oauth: true,
-    viz1Url: 'https://tableau.example.com/views/VizOne?:tooltip=n,
+    viz1Url: 'https://tableau.example.com/views/VizOne?:tooltip=n',
     viz2Url: 'https://tableau.example.com/views/VizTwo?:tooltip=n',
     viz3Url: 'https://tableau.example.com/views/VizThree?:tooltip=n'
 })
