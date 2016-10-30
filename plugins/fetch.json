@@ -62,13 +62,5 @@
         },
         "is_top_level": true,
         "variables": {}
-    },
-    "cordova-plugin-TableauOAuth": {
-        "source": {
-            "type": "local",
-            "path": "/Users/avertin/Documents/TableauOAuth"
-        },
-        "is_top_level": true,
-        "variables": {}
     }
 }
