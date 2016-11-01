@@ -7,9 +7,6 @@
         "files": {}
     },
     "installed_plugins": {
-        "cordova-plugin-TableauOAuth": {
-            "PACKAGE_NAME": "com.ionicframework.tableausampleapp703296"
-        },
         "cordova-plugin-console": {
             "PACKAGE_NAME": "com.ionicframework.tableausampleapp703296"
         },
@@ -32,6 +29,9 @@
             "PACKAGE_NAME": "com.ionicframework.tableausampleapp703296"
         },
         "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "com.ionicframework.tableausampleapp703296"
+        },
+        "tableau-plugin-oauth": {
             "PACKAGE_NAME": "com.ionicframework.tableausampleapp703296"
         }
     },

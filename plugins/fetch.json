@@ -63,10 +63,11 @@
         "is_top_level": true,
         "variables": {}
     },
-    "cordova-plugin-TableauOAuth": {
+    "tableau-plugin-oauth": {
         "source": {
-            "type": "local",
-            "path": "/Users/avertin/Documents/TableauOAuth"
+            "type": "git",
+            "url": "https://github.com/tableau/mobile-connected-client.git",
+            "subdir": "."
         },
         "is_top_level": true,
         "variables": {}
