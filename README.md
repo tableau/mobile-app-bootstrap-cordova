@@ -56,7 +56,7 @@ Then build the app in Xcode.
 
 ## Learning about the Frameworks
 *Cordova/Phonegap*  
-Cordova/Phonegap allows developers to create mobile applications using HTML, CSS, and JavaScript. It is useful for building web hybrid and native hybrid mobile apps. For more detailed information, check out this [Phonegap post](http://phonegap.com/blog/2015/03/12/mobile-choices-post1/). It is also useful to understand the [difference between Cordova and Phonegap](http://phonegap.com/blog/2012/03/19/phonegap-cordova-and-what-e2-80-99s-in-a-name/).
+Cordova/Phonegap allows developers to create mobile applications using HTML, CSS, and JavaScript. It is useful for building web hybrid and native hybrid mobile apps. For more detailed information, check out this [Phonegap post](http://phonegap.com/blog/2015/03/12/mobile-choices-post1/). It is also useful to understand the [difference between Cordova and Phonegap](http://phonegap.com/blog/2012/03/19/phonegap-cordova-and-whate28099s-in-a-name/).
 
 *Ionic*  
 Ionic provides many useful UI components to speed up development and create a more native feeling app experience. It leverages Angular JS to create custom directives with built-in styling. For more information about where Ionic fits in the framework, refer to [this Ionic post](http://blog.ionic.io/where-does-the-ionic-framework-fit-in/).
