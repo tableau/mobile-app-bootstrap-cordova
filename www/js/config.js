@@ -30,7 +30,7 @@ angular.module('TableauSampleApp.config', [])
     serverUrl: "https://tableau.example.com",
     sitePath: "sitePath",
     oauth: true,
-    viz1Url: 'https://tableau.example.com/views/VizOne?:tooltip=n,
+    viz1Url: 'https://tableau.example.com/views/VizOne?:tooltip=n',
     viz2Url: 'https://tableau.example.com/views/VizTwo?:tooltip=n',
     viz3Url: 'https://tableau.example.com/views/VizThree?:tooltip=n'
 }) 
