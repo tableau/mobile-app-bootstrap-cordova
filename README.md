@@ -94,7 +94,7 @@ Note: Most servers enable clickjacking protection which prevents URLs that inclu
 
 *  Ionic comes with lots of built-in [UI options](http://ionicframework.com/docs/components/#header). The basic themes of these UI options can also be overridden using [Sass](http://ionicframework.com/docs/v2/theming/overriding-ionic-variables/) to create a customized look and feel.
 
-*  Ionic also comes with lots of built-in [icons](http://ionicons.com). To assign an icon to a tab, edit `tabs.html` and assign your own `icon-on` and `icon-off` values. For example: `icon-on="ion-map"` would show the Ionic map icon when that tab is selected.
+*  Ionic also comes with lots of built-in [icons](http://ionicons.com). To assign an icon to a tab, edit `tabs.html` and assign your own `icon-on` and `icon-off` values. For example: `icon-on="ion-map"` would display the Ionic map icon when that tab is selected.
 
 *  Swap out the content in the home page by editing the HTML in `tab-home.html` and adding your assets to `www/img/`
 
