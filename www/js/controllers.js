@@ -86,9 +86,8 @@ angular.module('TableauSampleApp.controllers', ['ngCordova'])
                 SignInStatusMessages.createViz();
                 $scope.hideViz = false;
             }, null);
-
         });
-    }
+    };
 })
 
 // TS: Controller determines what content to display in the tab based on
