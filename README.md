@@ -1,14 +1,14 @@
 # Mobile App Bootstrap
 
-Provides example code for how to embed Tableau vizzes inside of a hybrid web app.
+Provides example code for how to embed Tableau vizzes inside of a hybrid web app. For the Objective-C version of this bootstrap see its the [Mobile App Bootstrap Objective-C project](https://github.com/tableau/mobile-app-bootstrap-objc).
 
 # Contents
 
 [Prerequisites](#Prerequisites)
 
-[Installation](#installation-iOS) 
+[Installation on iOS](#installation-iOS) 
 
-[Installation](#installation-Android)  
+[Installation on Android](#installation-Android)  
 
 [Customization](#customization)  
 
@@ -43,12 +43,14 @@ This section will guide you through the process of setting up your development e
 `$ chmod a+x /hooks/after_prepare/010_add_platform_class.js`
 4. Add the ionic iOS framework to the project:  
 `$ ionic platform add ios`
-5. Build the app for the iOS platform:  
+5. Run the following command to generate icons and splash screens:
+ `$ ionic resources`
+6. Build the app for the iOS platform:  
 `$ ionic build ios`
-6. Run the simulator:  
+7. Run the simulator:  
 `$ ionic emulate ios --target='XYZ' -l -c -s`  
-The flags set up a live reload server so that saved changes in the HTML, CSS, and JavaScript in the www folder will reflect in the app. You may be prompted to select an address to run the simulator on. Selecting any of the options is fine.  You may need to refresh the simulator by entering the command 'r' if the app appears partially blank after updating. Substitute 'XYZ' in the above command with an installed simulator. You can see the emulators that are available by running the following command from the root folder of the project:  
-`$ ./platforms/ios/cordova/lib/list-emulator-images`
+The flags set up a live reload server so that saved changes in the HTML, CSS, and JavaScript in the www folder will reflect in the app. You may be prompted to select an address to run the emulator on. Selecting any of the options is fine.  You may need to refresh the emulator by entering the command 'r' if the app appears partially blank after updating. Substitute 'XYZ' in the above command with an installed emulator. You can see the emulators that are available by running the following command from the root folder of the project:   
+`$ cordova run --list`
 
 ## Deploying on a Device
 Open `platforms/ios/TableauSampleApp.xcodeproj`. This will open Xcode. Plug in the target device with a USB cable. In Terminal, run:  
@@ -72,12 +74,11 @@ While the app can compile and run on Android; the [Connected Client Plugin](http
 7. Run the simulator:  
 `$ ionic emulate android --target='XYZ' -l -c -s`  
 The flags set up a live reload server so that saved changes in the HTML, CSS, and JavaScript in the www folder will reflect in the app. You may be prompted to select an address to run the simulator on. Selecting any of the options is fine.  You may need to refresh the simulator by entering the command 'r' if the app appears partially blank after updating. Substitute 'XYZ' in the above command with an installed emulator. You can see the emulators that are available by running the following command from the root folder of the project:  
-`$ cordova run --list`. You can install new or additional emulators using [AVDs] (https://developer.android.com/studio/run/managing-avds.html) in Android Studio. 
+`$ cordova run --list` 
+You can install new or additional emulators using [AVDs] (https://developer.android.com/studio/run/managing-avds.html) in Android Studio. 
 
 ## Deploying on a Device
-Open the project in Android Studio. Plug in the target device with a USB cable. In Terminal, run:  
-`$ ionic prepare android`  
-Then build the app in Xcode.
+Open the project in Android Studio. Plug in the target device with a USB cable. Load the app using [AVDs] (https://developer.android.com/studio/run/managing-avds.html) in Android Studio.
 
 ## Learning about the Frameworks
 *Cordova/Phonegap*  
@@ -169,7 +170,7 @@ Note:
 <a name="issues"/>
 # Known Issues
 
-1. The sample app does not yet have code that provides user authentication support on the Android platform.
+1. The sample app does not yet have code that provides connect client support (i.e. "keep me signed in") on the Android platform.
 
 2. The 'View Data' option in tooltip overrides the current view of the app. To avoid this issue, disable the tooltip by appending the parameter `:tooltip=n` to the end of the viz URLs.
 
