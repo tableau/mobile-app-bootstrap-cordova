@@ -46,18 +46,34 @@ angular.module('TableauSampleApp.services', [])
             // TS: Although the plugin uses a success and callback function,
             // wrap these in a promise that the service returns.
             // Angular JS expects promises rather than callback functions.
-            var q = $q.defer();
-            TableauOAuth.checkSignInStatus(config.serverUrl, config.sitePath,
-            function(){
-                // TS: User is signed in callback.
-                q.resolve();
-            },
-            function() {
-                // TS: User is not signed in callback.
-                q.reject();
-            });
+            
+            // TS: The TableauOAuth functionality only exists on iOS
+            if (ionic.Platform.isIOS() || ionic.Platform.isIPad()) {
+                var q = $q.defer();
+                TableauOAuth.checkSignInStatus(config.serverUrl, config.sitePath,
+                    function(){
+                        // TS: User is signed in callback.
+                        q.resolve();
+                    },
+                    function() {
+                        // TS: User is not signed in callback.
+                        q.reject();
+                    });
 
             return q.promise;
+        }
+        else {
+                /* TS: For Android and web, mock the sign in function and return true to pass the auth test
+                 */
+                return $q(function(resolve, reject) {
+                    if (true) {
+                        resolve(true);
+                    } else {
+                        reject(false);
+                    }
+                });
+            }
+    
         },
         // TS: Sign the user out.
         signOut : function() {

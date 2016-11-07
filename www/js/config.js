@@ -21,7 +21,7 @@ angular.module('TableauSampleApp.config', [])
     viz1Url: 'https://public.tableau.com/views/10_0InternationalTourism/InternationalTourism?:tooltip=n&:toolbar=top&:app=yes',
     viz2Url: 'https://public.tableau.com/views/10_0ClinicAnalytics/ClinicAnalytics?:tooltip=n&:toolbar=top',
     viz3Url: 'https://public.tableau.com/views/10_0SuperstoreSales/Overview?:tooltip=n&:toolbar=top'
-})
+});
 
 /* Config Example 
 .constant('config', {

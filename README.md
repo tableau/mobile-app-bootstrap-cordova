@@ -6,7 +6,9 @@ Provides example code for how to embed Tableau vizzes inside of a hybrid web app
 
 [Prerequisites](#Prerequisites)
 
-[Installation](#installation)  
+[Installation](#installation-iOS) 
+
+[Installation](#installation-Android)  
 
 [Customization](#customization)  
 
@@ -18,25 +20,24 @@ Provides example code for how to embed Tableau vizzes inside of a hybrid web app
 
 <a name="Prerequisites"/>
 # Prerequisites
-At the moment, the Mobile App Bootstrap is only supported on iOS. While the app can compile and run on Android; the [Connected Client Plugin](https://github.com/tableau/mobile-connected-client) is currently only available on iOS.
-
-<a name="installation"/>
-# Installation
-
-This section will guide you through the process of setting up your iOS development environment and running the Mobile App Bootstrap in the simulator.
+This section will guide you through the process of setting up your development environment with the pre-requisite libraries needed to run the Mobile App Bootstrap.
 
 1. Install [Node.js](https://nodejs.org/en/)
 2. Install Bower  
 `$ sudo npm install -g bower`
 3. Install Cordova  
 `$ sudo npm install -g cordova` 
-4. Install the required [iOS development tools](http://cordova.apache.org/docs/en/latest/guide/platforms/ios/index.html#installing-the-requirements )
+4. Install the platform development tools
+    * iOS: Install the required [iOS development tools](http://cordova.apache.org/docs/en/latest/guide/platforms/ios/index.html#installing-the-requirements )
+    * Android: Install the required [Android development tools](https://cordova.apache.org/docs/en/latest/guide/platforms/android/index.html#installing-the-requirements)  
+    We recommend using Java SDK 1.8 and Android SDK 23.x. Using other versions will require changes to various project or environment configuration files.
 5. Install Ionic  
 `$ sudo npm install -g ionic`
 6. Install [Git](https://git-scm.com/downloads)
 
-## Starting the Tableau Sample App
-1. Download the code for the app from this [repository](https://github.com/tableau/mobile-app-bootstrap)
+<a name="installation-iOS"/>
+# Installation on iOS
+1. Download the code for the app from this [repository](https://github.com/tableau/mobile-app-bootstrap-cordova)
 2. Use Terminal to navigate to the root folder containing the code
 3. Ensure the `add_platform_class.js` file has the execute permission:  
 `$ chmod a+x /hooks/after_prepare/010_add_platform_class.js`
@@ -45,13 +46,37 @@ This section will guide you through the process of setting up your iOS developme
 5. Build the app for the iOS platform:  
 `$ ionic build ios`
 6. Run the simulator:  
-`$ ionic emulate ios --target='iPad-Air' -l -c -s`  
-The flags set up a live reload server so that saved changes in the HTML, CSS, and JavaScript in the www folder will reflect in the app. You may be prompted to select an address to run the simulator on. Selecting any of the options is fine.  You may need to refresh the simulator by entering the command 'r' if the app appears partially blank after updating. You can see other emulators that are available by running the following command from the root folder of the project:  
+`$ ionic emulate ios --target='XYZ' -l -c -s`  
+The flags set up a live reload server so that saved changes in the HTML, CSS, and JavaScript in the www folder will reflect in the app. You may be prompted to select an address to run the simulator on. Selecting any of the options is fine.  You may need to refresh the simulator by entering the command 'r' if the app appears partially blank after updating. Substitute 'XYZ' in the above command with an installed simulator. You can see the emulators that are available by running the following command from the root folder of the project:  
 `$ ./platforms/ios/cordova/lib/list-emulator-images`
 
 ## Deploying on a Device
 Open `platforms/ios/TableauSampleApp.xcodeproj`. This will open Xcode. Plug in the target device with a USB cable. In Terminal, run:  
 `$ ionic prepare ios`  
+Then build the app in Xcode.
+
+<a name="installation-Android"/>
+# Installation on Android
+While the app can compile and run on Android; the [Connected Client Plugin](https://github.com/tableau/mobile-connected-client) is currently only available on iOS. This means that users will be prompted to sign-in between sessions.
+
+1. Download the code for the app from this [repository](https://github.com/tableau/mobile-app-bootstrap-cordova)
+2. Use Terminal to navigate to the root folder containing the code
+3. Ensure the `add_platform_class.js` file has the execute permission:  
+`$ chmod a+x /hooks/after_prepare/010_add_platform_class.js`
+4. Add the ionic Android framework to the project:  
+`$ ionic platform add android`
+5. Run the following command to generate icons and splash screens:
+ `$ ionic resources`
+6. Build the app for the Android platform:  
+`$ ionic build android`
+7. Run the simulator:  
+`$ ionic emulate android --target='XYZ' -l -c -s`  
+The flags set up a live reload server so that saved changes in the HTML, CSS, and JavaScript in the www folder will reflect in the app. You may be prompted to select an address to run the simulator on. Selecting any of the options is fine.  You may need to refresh the simulator by entering the command 'r' if the app appears partially blank after updating. Substitute 'XYZ' in the above command with an installed emulator. You can see the emulators that are available by running the following command from the root folder of the project:  
+`$ cordova run --list`. You can install new or additional emulators using [AVDs] (https://developer.android.com/studio/run/managing-avds.html) in Android Studio. 
+
+## Deploying on a Device
+Open the project in Android Studio. Plug in the target device with a USB cable. In Terminal, run:  
+`$ ionic prepare android`  
 Then build the app in Xcode.
 
 ## Learning about the Frameworks

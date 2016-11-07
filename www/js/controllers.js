@@ -6,6 +6,7 @@ angular.module('TableauSampleApp.controllers', ['ngCordova'])
     var start = true;
     $ionicPlatform.ready(function() {
         start = false;
+
         TableauAuth.checkSignInStatus()
             .then(function() {
                 SignInStatusMessages.sessionActive();
@@ -35,7 +36,7 @@ angular.module('TableauSampleApp.controllers', ['ngCordova'])
         };
         $cordovaInAppBrowser.open(url, '_system', options);
         
-    }
+    };
 })
 
 // TS: Controller handles the sign in process by opening the InAppBrowser.
