@@ -39,7 +39,7 @@ This section will guide you through the process of setting up your iOS developme
 1. Download the code for the app from this [repository](https://github.com/tableau/mobile-app-bootstrap)
 2. Use Terminal to navigate to the root folder containing the code
 3. Ensure the `add_platform_class.js` file has the execute permission:  
-`$ chmod a+x /hooks/after_prepare/010_add_platform_class.js`
+`$ chmod a+x hooks/after_prepare/010_add_platform_class.js`
 4. Add the ionic iOS framework to the project:  
 `$ ionic platform add ios`
 5. Build the app for the iOS platform:  
