@@ -1,4 +1,5 @@
 # Mobile App Bootstrap
+[![Community Supported](https://img.shields.io/badge/Support%20Level-Community%20Supported-457387.svg)](https://www.tableau.com/support-levels-it-and-developer-tools)
 
 Provides example code for how to embed Tableau vizzes inside of a hybrid web app.
 
@@ -162,7 +163,7 @@ The solution is to stop using the JS API from the Server and copy it locally:
 <a name="support"/>
 # Support
 
-This collection is not officially 'blessed' by Tableau Engineering or Support. What does that mean? We didn't have a QA team test it. It's a tool for learning how to embed vizzes inside a mobile application. You should not expect that there are 0 bugs.
+This collection is supported by the community and not officially 'blessed' by Tableau Engineering or Support. What does that mean? We didn't have a QA team test it. It's a tool for learning how to embed vizzes inside a mobile application. You should not expect that there are 0 bugs.
 
 If you have problems getting it to work, feel free to email us with questions, but we can't promise quick responses. The [Tableau Developer Community](developer.tableau.com) is also a great resource if you need help.
 
