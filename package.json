@@ -8,7 +8,7 @@
     "gulp-minify-css": "^0.3.0",
     "gulp-rename": "^1.2.0",
     "gulp-sass": "^2.0.4",
-    "tableau-plugin-oauth": "https://github.com/tableau/mobile-connected-client.git",
+    "tableau-mobile-connected-client": "https://github.com/tableau/mobile-connected-client.git",
     "cordova-ios": "~4.5.1"
   },
   "devDependencies": {
@@ -32,7 +32,6 @@
   ],
   "cordova": {
     "plugins": {
-      "tableau-plugin-oauth": {}
     },
     "platforms": [
       "ios"

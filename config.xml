@@ -53,5 +53,5 @@
     <icon src="resources/ios/icon/icon-small@3x.png" />
     <allow-navigation href="http://10.5.10.65:8100" />
     <engine name="ios" spec="~4.5.1" />
-    <plugin name="tableau-plugin-oauth" spec="https://github.com/tableau/mobile-connected-client.git" />
+    <plugin name="tableau-mobile-connected-client" spec="https://github.com/tableau/mobile-connected-client.git" />
 </widget>
