@@ -39,23 +39,24 @@ This section will guide you through the process of setting up your iOS developme
 
 ### Starting the Tableau Sample App
 
-1. Download the code for the app from this [repository](https://github.com/tableau/mobile-app-bootstrap)
+1. Download the code for the app from this [repository](https://github.com/tableau/mobile-app-bootstrap-cordova)
 2. Use Terminal to navigate to the root folder containing the code
 3. Ensure the `add_platform_class.js` file has the execute permission:  
 `$ chmod a+x hooks/after_prepare/010_add_platform_class.js`
 4. Add the ionic iOS framework to the project:  
-`$ ionic platform add ios`
+`$ ionic cordova platform add ios`
+(confirm when asked to install .node_modules)
 5. Build the app for the iOS platform:  
-`$ ionic build ios`
+`$ ionic cordova build ios`
 6. Run the simulator:  
-`$ ionic emulate ios --target='iPad-Air' -l -c -s`  
+`$ ionic cordova emulate ios --target='iPad-Air' -l -c -s`  
 The flags set up a live reload server so that saved changes in the HTML, CSS, and JavaScript in the www folder will reflect in the app. You may be prompted to select an address to run the simulator on. Selecting any of the options is fine.  You may need to refresh the simulator by entering the command 'r' if the app appears partially blank after updating. You can see other emulators that are available by running the following command from the root folder of the project:  
 `$ ./platforms/ios/cordova/lib/list-emulator-images`
 
 ### Deploying on a Device
 
 Open `platforms/ios/TableauSampleApp.xcodeproj`. This will open Xcode. Plug in the target device with a USB cable. In Terminal, run:  
-`$ ionic prepare ios`  
+`$ ionic cordova prepare ios`  
 Then build the app in Xcode.
 
 ### Learning about the Frameworks
@@ -140,11 +141,11 @@ To debug the HTML layer, use Safari's Developer Tools, enabled in Safari's Prefe
 
 Note:
 
-* `ionic emulate` rewrites the cordova configuration file at `platforms/ios/TableauSampleApp/config.xml` to point at an ionic web server running locally. `ionic build ios` should return `config.xml` to point to the app's bundled index.html file.
+* `ionic cordova emulate` rewrites the cordova configuration file at `platforms/ios/TableauSampleApp/config.xml` to point at an ionic web server running locally. `ionic cordova build ios` should return `config.xml` to point to the app's bundled index.html file.
 
 * To Safari's debug tools, the app's Sign In page looks like a separate WebView.
 
-* To really debug everything being sent and received by the app, you might enjoy a web debugging proxy like [Fiddler](http://www.telerik.com/fiddler) or [Charles](https://www.charlesproxy.com/).
+* To really debug everything being sent and received by the app, you might enjoy a web debugging proxy like [Fiddler](http://www.telerik.com/fiddler), [Charles](https://www.charlesproxy.com/), or [Burp](https://portswigger.net/burp).
 
 ## Known Issues
 

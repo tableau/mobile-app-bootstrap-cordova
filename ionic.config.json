@@ -1,5 +1,15 @@
 {
   "name": "TableauSampleApp",
   "app_id": "",
-  "defaultBrowser": "chrome"
+  "defaultBrowser": "chrome",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic1",
+  "watchPatterns": [
+    "scss/**/*",
+    "www/**/*",
+    "!www/lib/**/*",
+    "!www/**/*.map"
+  ]
 }

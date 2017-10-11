@@ -1,3 +1,4 @@
 ## folders built by cordova ##
 platforms/
 plugins/
+node_modules
