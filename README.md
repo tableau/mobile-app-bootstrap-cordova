@@ -12,9 +12,9 @@ Provides example code for how to embed Tableau vizzes inside of a hybrid web app
 
 [Customization](#customization)
 
-[Debugging](#debugging)
-
 [Authentication](#authentication)
+
+[Debugging](#debugging)
 
 [Known Issues](#issues)
 
