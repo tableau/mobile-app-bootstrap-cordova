@@ -16,7 +16,7 @@ Provides example code for how to embed Tableau vizzes inside of a hybrid web app
 
 [Debugging](#debugging)
 
-[Known Issues](#issues)
+[Known Issues](#known-issues)
 
 [Support](#support)
 
@@ -46,8 +46,8 @@ This section will guide you through the process of setting up your iOS developme
 4. Add the ionic iOS framework to the project:  
 `$ ionic cordova platform add ios`
 (confirm when asked to install .node_modules)
-5. Build the app for the iOS platform:  
-`$ ionic cordova build ios`
+5. Build the app for the iOS platform. (If you see an `***ARCHIVE FAILED***` error message, see [Known Issues](#known-issues) # 7)  
+`$ ionic cordova build ios` 
 6. Run the simulator:  
 `$ ionic cordova emulate ios --target='iPad-Air' -l -c -s`  
 The flags set up a live reload server so that saved changes in the HTML, CSS, and JavaScript in the www folder will reflect in the app. You may be prompted to select an address to run the simulator on. Selecting any of the options is fine.  You may need to refresh the simulator by entering the command 'r' if the app appears partially blank after updating. You can see other emulators that are available by running the following command from the root folder of the project:  
@@ -158,6 +158,8 @@ The solution is to stop using the JS API from the Server and copy it locally:
 4. No error handling for a user with valid credentials but incorrect permissions for viewing the vizzes.
 5. Device rotation does not work. This is unfortunately a Cordova bug but can be fixed by updating the `.plist` settings in Xcode to allow rotation.
 6. The app does not support offline content.
+7. Code Signing Error with iOS 11: Double click to open `platforms/ios/TableauSampleApp.xcodeproj`. This will open Xcode. In the general tab, make sure signing is set to 'Automatically manage signing' and select a provisioning profile.
+
 
 ## Support
 
