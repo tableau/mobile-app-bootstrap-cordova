@@ -1,6 +1,11 @@
-# Mobile App Bootstrap
+# [DEPRECATED] Mobile App Bootstrap - Cordova
 
 [![Community Supported](https://img.shields.io/badge/Support%20Level-Community%20Supported-457387.svg)](https://www.tableau.com/support-levels-it-and-developer-tools)
+
+## NOTE
+This Cordova version of the Mobile App Bootstrap has been deprecated. It is included here for historical purposes, but should no longer be used for actual development. For a cross-platform solution, we instead recommend [Mobile App Boostrap: React Native](https://github.com/tableau/mobile-app-bootstrap-react-native).
+
+## Overview
 
 Provides example code for how to embed Tableau vizzes inside of a hybrid web app.
 
