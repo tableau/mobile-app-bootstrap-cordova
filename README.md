@@ -1,9 +1,9 @@
 # [DEPRECATED] Mobile App Bootstrap - Cordova
 
-[![Community Supported](https://img.shields.io/badge/Support%20Level-Community%20Supported-457387.svg)](https://www.tableau.com/support-levels-it-and-developer-tools)
+![Deprecated](https://img.shields.io/badge/Project%20Status-Deprecated-red.svg "Project Status: Deprecated")
 
 ## NOTE
-This Cordova version of the Mobile App Bootstrap has been deprecated. It is included here for historical purposes, but should no longer be used for actual development. For a cross-platform solution, we instead recommend [Mobile App Boostrap: React Native](https://github.com/tableau/mobile-app-bootstrap-react-native).
+This Cordova version of the Mobile App Bootstrap has been **deprecated**. It is included here for historical purposes, but should no longer be used for actual development. For a cross-platform solution, we instead recommend [Mobile App Boostrap: React Native](https://github.com/tableau/mobile-app-bootstrap-react-native).
 
 ## Overview
 
